@@ -7,10 +7,27 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="img/flowers.png" type="image/x-icon">
     <title>flowers</title>
+    <style>
+
+audio:hover{
+    
+    
+    filter: opacity(1);
+    cursor: pointer;
+
+   
+}
+
+    </style>
 </head>
 <body class="container">
   <!-- Pembuat code: https://codepen.io/mdusmanansari/pen/BamepLe -->
-    <div class="night"></div>
+  <div class="audio" style=" position: fixed; z-index: 1; filter: opacity(0.5); "> 
+    <iframe  style="border-radius:12px;" src="https://open.spotify.com/embed/track/0gt76DuMx7F3UZJPg7jcC5?utm_source=generator&theme=0" width=" height="" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+ 
+    
+  <div class="night"></div>
     <div class="flowers">
       <div class="flower flower--1">
         <div class="flower__leafs flower__leafs--1">
@@ -308,5 +325,20 @@
       </div>
     </div>
     <script src="main.js"></script>
+    <script>
+      function autoplay() {
+          var t = setTimeout(function(){
+              var button = document.querySelector('[title="Play"]') || false;
+              if (button) {
+                  console.log('Click', button)
+                  button.click()
+              }
+          }, 999)
+      }
+      document.addEventListener('DOMContentLoaded', (event) => {
+          autoplay()
+      })
+  </script>
+      
   </body>
 </html>
