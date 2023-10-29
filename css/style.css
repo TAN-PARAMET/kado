@@ -50,11 +50,13 @@ body{
     margin-bottom: 20px;
 }
 
-.button a{
+.button-34 a{
     text-decoration: none;
     font-size: 1rem;
-    color: #111;
+    color: #ffffff;
 }
+
+
 
 @media screen and (max-width:574px){
     .greetings{
@@ -67,7 +69,43 @@ body{
         font-size: 1rem;
     }
     
-    .button a{
-        font-size: .5rem;
+    .button-34 a{
+        font-size: 0.8rem;
     }
+    
+    .button-34{
+        padding: 0px 0px;
+    
+       
+    }
+
 }
+
+/* CSS */
+.button-34 {
+    background: #ff0677;
+    border-radius: 999px;
+    box-shadow: #ff0677 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    transition: box-shadow 0.5s;
+  }
+
+  .button-34:hover{
+
+    box-shadow: 0 0 5px #ff0677, 0 0 30px #ff0677, 0 0 70px #ff0677;
+
+  }
+          
